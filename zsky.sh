@@ -58,6 +58,8 @@ yum -y install git
 yum -y install python-pip
 yum -y install redis
 pip install -r requirements.txt
+#如果是国内的，用下面这个清华的镜像源，否则特别容易time out：
+#pip install  -i https://pypi.tuna.tsinghua.edu.cn/simple  -r requirements.txt
 #如果提示没有pip命令,或者你使用linode的主机,请取消下面4行的注释
 #wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 #wget -qO /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
